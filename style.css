@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+#display {
+  color: white;
+  background: rgb(36, 32, 32);
+  text-align: right;
+  font-size: 4rem;
+  align-self: right;
+  padding-top: 40px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+.grid-1 {
+  display: flex;
+}
+.grid-2,
+.grid-3,
+.grid-2a,
+.grid-3ab {
+  display: grid;
+}
+.grid-2 {
+  grid-template-columns: 75% 25%;
+}
+.grid-2a {
+  grid-template-columns: auto auto auto;
+}
+.grid-3 {
+  grid-template-columns: 75% 25%;
+}
+.grid-3ab {
+  grid-template-columns: 66.5% 33.5%;
+}
+.grid-3aa {
+  display: flex;
+}
+button {
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 20px;
+  background-color: rgb(134, 62, 134);
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+button:hover {
+  transform: scale(0.99);
+  opacity: 0.95;
+  border: 2px solid black;
+}
+#clear {
+  background-color: rgb(214, 53, 53);
+}
+#equals,
+#divide,
+#multiply,
+#subtract,
+#add {
+  background-color: rgb(48, 102, 48);
+  color: whitesmoke;
+}
+.footer {
+  color: rgb(134, 62, 134);
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-top: 10px;
+}
+@media (max-width: 430px) {
+  .calculator {
+    min-width: 90%;
+  }
+}

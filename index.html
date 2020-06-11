@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="A Simple JavaScript Calculator" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, JS, calculator, FCC, freecodecamp"
+    />
+    <meta name="author" content="Duru-young Raymond" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>JavaScript Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <div id="display">0</div>
+        <hr />
+        <div class="grid-1">
+          <button id="clear" onclick="clearDisplay()" value="C">
+            C
+          </button>
+          <button id="divide" onclick="displayValue(this.value)" value="/">
+            ÷
+          </button>
+          <button id="multiply" onclick="displayValue(this.value)" value="*">
+            x
+          </button>
+          <button id="subtract" onclick="displayValue(this.value)" value="-">
+            -
+          </button>
+        </div>
+        <div class="grid-2">
+          <div class="grid-2a">
+            <button id="seven" onclick="displayValue(this.value)" value="7">
+              7
+            </button>
+            <button id="eight" onclick="displayValue(this.value)" value="8">
+              8
+            </button>
+            <button id="nine" onclick="displayValue(this.value)" value="9">
+              9
+            </button>
+
+            <button id="four" onclick="displayValue(this.value)" value="4">
+              4
+            </button>
+            <button id="five" onclick="displayValue(this.value)" value="5">
+              5
+            </button>
+            <button id="six" onclick="displayValue(this.value)" value="6">
+              6
+            </button>
+          </div>
+          <div class="grid-2b">
+            <button id="add" onclick="displayValue(this.value)" value="+">
+              +
+            </button>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="grid-3a">
+            <div class="grid-3aa">
+              <button id="one" onclick="displayValue(this.value)" value="1">
+                1
+              </button>
+              <button id="two" onclick="displayValue(this.value)" value="2">
+                2
+              </button>
+              <button id="three" onclick="displayValue(this.value)" value="3">
+                3
+              </button>
+            </div>
+            <div class="grid-3ab">
+              <button id="zero" onclick="displayValue(this.value)" value="0">
+                0
+              </button>
+              <button id="decimal" onclick="displayValue(this.value)" value=".">
+                .
+              </button>
+            </div>
+          </div>
+          <div class="grid-3b">
+            <button id="equals" onclick="calculate()" value="=">
+              =
+            </button>
+          </div>
+        </div>
+        <div class="footer">
+          <hr />
+          <p>Designed by ray</p>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
